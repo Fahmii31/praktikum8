@@ -5,6 +5,7 @@ const userRoutes = require('./routes/user.routes');
 
 app.use(express.json());
 app.use('/api/users', userRoutes);
+app.use('/api/products', require('./routes/products.routes'));
 
 app.get('/', (req, res) => {
   res.send('Hello, World');
