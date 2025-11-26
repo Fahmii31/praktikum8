@@ -11,7 +11,8 @@ const {
 } = require('../controllers/products.controller');
 
 // Import middleware
-const { authBearer } = require('../middleware/auth.middleware');
+const authBearer = require('../middleware/auth.middleware');
+
 
 // Public endpoints (tidak perlu token)
 router.get('/', getAllProducts);
